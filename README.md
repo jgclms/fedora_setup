@@ -4,32 +4,30 @@
 $ cd ~/originals
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 $ bash ~originals/Miniconda3-latest-Linux-x86_64.sh
+```
+Exit & re-enter shell (install adds a hook at end of `~/.bashrc`)
+
+```
+$ conda create --name foo ipython
+$ conda info --envs
+# conda environments:
+base    *  /home/jgreve/miniconda3
+foo        /home/jgreve/miniconda3/envs/exercism
+$ conda activate foo
+```
+# ipython setup
+
+```
 $ ipython profile create
 $ cp ~/.ipython/profile_default/ipython_config.py   ~/.ipython/profile_default/ipython_config.py.sav
 $ diff ~/.ipython/profile_default/ipython_config.py   ~/.ipython/profile_default/ipython_config.py.sav
 $ cp ~/.ipython/profile_default/ipython_config.py   ~/.ipython/profile_default/ipython_config.py.sav
 $ diff ~/.ipython/profile_default/ipython_config.py.sav ~/.ipython/profile_default/ipython_config.py   
-196a197
 > c.InteractiveShell.colors = 'Linux'
-301c302
-< #c.TerminalInteractiveShell.editing_mode = 'emacs'
----
 > c.TerminalInteractiveShell.editing_mode = 'vi'
-304c305
-< #c.TerminalInteractiveShell.editor = 'vi'
----
 > c.TerminalInteractiveShell.editor = 'vi'
-311c312
-< #c.TerminalInteractiveShell.extra_open_editor_shortcuts = False
----
 > c.TerminalInteractiveShell.extra_open_editor_shortcuts = False
-336c337
-< #c.TerminalInteractiveShell.prompt_includes_vi_mode = True
----
 > c.TerminalInteractiveShell.prompt_includes_vi_mode = True
-364c365
-< #c.TerminalInteractiveShell.true_color = False
----
 > c.TerminalInteractiveShell.true_color = True
 ```
 
