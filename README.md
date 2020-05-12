@@ -1,3 +1,5 @@
+# FiraCode (fixed width font)
+https://github.com/tonsky/FiraCode/wiki/Linux-instructions#installing-with-a-package-manager
 
 # conda
 ```
