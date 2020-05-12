@@ -36,10 +36,10 @@ Bash sometimes has long delay on command not found, or comes back with suggested
 `# sed -i 's/SoftwareSourceSearch=true/SoftwareSourceSearch=false/' /etc/PackageKit/CommandNotFound.conf`
 https://forums.fedoraforum.org/showthread.php?240982-bash-hangs-on-quot-command-not-found-quot-and-pk-command-not-found
 
-Hrrm... so [PackageKit](https://en.wikipedia.org/wiki/PackageKit) is "a consistent and high-level front end for a number of different package management systems."  
-Oh joy.  
+So [PackageKit](https://en.wikipedia.org/wiki/PackageKit) is "a consistent and high-level front end for a number of different package management systems."  
 
-# Stupid gnome tricks
+
+# Gnome tricks
 alt-tab cycles through "applications" instead of windows.
 Based on: https://askubuntu.com/a/996410/806934
 
